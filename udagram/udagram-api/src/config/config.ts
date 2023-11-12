@@ -1,4 +1,5 @@
 import * as dotenv from "dotenv";
+import * as process from "process";
 dotenv.config();
 
 // ENV variables 
@@ -7,17 +8,15 @@ dotenv.config();
 // Are Also needed
 
 export const config = {
-  username: "postgres",
-  password: "Hung1991",
-  database: "postgres",
-  host: "database-1.cqmhdelgtyti.us-east-1.rds.amazonaws.com",
-  aws_region: "us-east-1",
-  aws_profile: "default",
-  aws_media_bucket: "arn:aws:s3:::udacity-bucket-hungcm5",
-  url: "http://localhost:8080",
+  username: process.env.POSTGRES_USERNAME,
+  password: process.env.POSTGRES_PASSWORD,
+  database: process.env.POSTGRES_DB,
+  host: process.env.POSTGRES_HOST,
+  aws_region: process.env.AWS_REGION,
+  aws_profile: process.env.AWS_PROFILE,
+  aws_media_bucket: process.env.AWS_BUCKET,
+  url: process.env.URL,
   jwt: {
-    secret: "hungcm5",
+    secret: process.env.JWT_SECRET,
   },
-  accessKeyId: "ASIAUG2BTKLAQ2ELWJFF",
-  secretAccessKey: "sbksPvlOhteF8n6SWazY6otPBadWdO6AF+SWujI0"
 };
