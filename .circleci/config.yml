@@ -40,6 +40,7 @@ jobs:
       - run:
           name: Front-End Build
           command: |
+            npm i -D typescript@3.4.5
             echo "TODO: Build the frontend app"
             npm run frontend:build
       # TODO: Build the backend API      
