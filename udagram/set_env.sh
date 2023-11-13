@@ -11,3 +11,4 @@ export JWT_SECRET=hungcm5
 export URL=http://localhost:8100
 export AWS_ACCESS_KEY_ID=AKIAUG2BTKLA24IXWNNL
 export AWS_SECRET_ACCESS_KEY=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
+export AWS_DEFAULT_REGION=us-west-1
