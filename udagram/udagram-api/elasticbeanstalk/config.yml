@@ -15,5 +15,6 @@ global:
   platform_name: null
   platform_version: null
   profile: eb-cli
-  sc: git
+  repository: null
+  sc: null
   workspace_type: Application
